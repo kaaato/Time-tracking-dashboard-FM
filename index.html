@@ -15,106 +15,208 @@
   <body class="page">
     <main>
       <div class="inner">
-        <header class="section-header b-radius">
+        <div class="tabs b-radius">
           <div class="user b-radius">
             <div class="box--img">
               <img src="./images/image-jeremy.png" alt="Avatar" width="234" height="234" class="user__img" />
             </div>
             <h1 class="title"><span class="text--report-for">Report for</span>Jeremy Robson</h1>
           </div>
-          <div class="tabs">
-            <button class="tab" type="button" data-value="daily">Daily</button>
-            <button class="tab" type="button" data-value="weekly">Weekly</button>
-            <button class="tab" type="button" data-value="monthly">Monthly</button>
+          <div role="tablist" class="tablist">
+            <button class="tab" role="tab" id="tab1" aria-selected="true" type="button">Daily</button>
+            <button class="tab" role="tab" id="tab2" aria-selected="false" type="button" tabindex="-1">Weekly</button>
+            <button class="tab" role="tab" id="tab3" aria-selected="false" type="button" tabindex="-1">Monthly</button>
           </div>
-        </header>
+        </div>
 
-        <ul class="list">
-          <li class="item item--work b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Work</h2>
+        <div role="tabpanel" aria-labelledby="tab1" class="tabpanel">
+          <div class="card-frame--work card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
-            </div>
-          </li>
-          <li class="item item--play b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Play</h2>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--play card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
-            </div>
-          </li>
-          <li class="item item--study b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Study</h2>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--study card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
-            </div>
-          </li>
-          <li class="item item--exercise b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Exercise</h2>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--exercise card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
-            </div>
-          </li>
-          <li class="item item--social b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Social</h2>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--social card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
-            </div>
-          </li>
-          <li class="item item--self-care b-radius">
-            <div class="inner__item b-radius" tabindex="0">
-              <h2 class="subject">Self Care</h2>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--selfcare card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
               <button class="menu" type="button" aria-label="Menu">
                 <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
               </button>
-              <p class="text--current"><span class="current-hrs">&#8230;</span>hrs</p>
-              <p class="text--previous">
-                <span class="text-tenses"></span>
-                <span class="previous-hrs">&#8230;</span>
-                hrs
-              </p>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Yesterday - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+        </div>
+
+        <div role="tabpanel" aria-labelledby="tab2" class="tabpanel" hidden>
+          <div class="card-frame--work card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--play card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="card-frame--study card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--exercise card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--social card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--selfcare card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Week - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+        </div>
+
+        <div role="tabpanel" aria-labelledby="tab3" class="tabpanel" hidden>
+          <div class="card-frame--work card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--play card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--study card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--exercise card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--social card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+          <div class="card-frame--selfcare card-frame b-radius">
+            <div class="card b-radius">
+              <h2 class="subject"><a href="#" class="card-link">Title</a></h2>
+              <button class="menu" type="button" aria-label="Menu">
+                <svg aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path class="menu__img" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+              <p class="text--current"><span class="hrs--current"></span> hrs</p>
+              <p class="text--previous">Last Month - <span class="hrs--previous"></span>hrs</p>
+            </div>            
+          </div>
+        </div>
       </div>
     </main>
   </body>
