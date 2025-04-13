@@ -23,6 +23,11 @@ function setHandlerOnAllTabs(tabs) {
       let isDesktopSize = findViewportSize();
       if (isDesktopSize) {
         // tablist is vertical.
+        event.preventDefault();
+          if (event.code == "Tab") {
+          let panel = document.querySelector(`[aria-labelledby=${event.target.id}]`);
+          panel.querySelector(".card-link").focus();
+        }
         if (i == 0) {
           if (event.code == "ArrowUp") {
             moveToLastTab(event.target);
