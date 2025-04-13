@@ -22,7 +22,6 @@ function setHandlerOnAllTabs(tabs) {
     element.addEventListener("keydown", event => {
       let isDesktopSize = findViewportSize();
       if (isDesktopSize) {
-        event.preventDefault(); // to prevent scrolling
         // tablist is vertical.
         if (i == 0) {
           if (event.code == "ArrowUp") {
